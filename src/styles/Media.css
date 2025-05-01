@@ -1,0 +1,129 @@
+.media-page {
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefefe;
+}
+
+/* Video Section */
+.media-videos {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.media-videos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Ensure iframe responsiveness */
+.video-grid iframe {
+  width: 100%;
+  max-width: 480px;
+  height: 270px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.video-grid iframe:hover {
+  transform: scale(1.03);
+}
+
+/* Image Gallery Section */
+.media-gallery {
+  margin-bottom: 60px;
+}
+
+.media-gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #34495e;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Ensure images scale correctly */
+.image-grid img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-grid img:hover {
+  transform: scale(1.04);
+}
+
+/* Call-to-Action Section */
+.media-cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f8b500, #fceabb);
+  border-radius: 16px;
+  animation: pulse 3s infinite;
+}
+
+.media-cta h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.media-cta p {
+  font-size: 1.1rem;
+  margin: 10px 0 20px;
+  color: #444;
+}
+
+.donate-now {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.donate-now:hover {
+  background-color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4);
+  }
+  70% {
+      box-shadow: 0 0 0 20px rgba(231, 76, 60, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+  }
+}

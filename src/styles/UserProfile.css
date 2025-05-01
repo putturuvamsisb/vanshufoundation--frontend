@@ -1,0 +1,114 @@
+/* styles/UserProfile.css */
+
+.profile-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e8f0fe, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .profile-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: slideUp 0.7s ease-in-out;
+  }
+  
+  .profile-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .profile-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-box label {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .profile-box input {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-box input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .profile-box button[type="submit"] {
+    margin-top: 25px;
+    padding: 14px;
+    font-size: 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .profile-box button[type="submit"]:hover {
+    background: #0056b3;
+  }
+  
+  .logout-btn {
+    margin-top: 15px;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #b02a37;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .profile-box {
+      padding: 25px;
+    }
+  
+    .profile-box h2 {
+      font-size: 24px;
+    }
+  
+    .profile-box button[type="submit"],
+    .logout-btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  

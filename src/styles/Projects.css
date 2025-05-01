@@ -1,0 +1,132 @@
+.projects-page {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #ffffff, #f5f7fa);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeDown 1s ease-in;
+}
+
+.projects-header h1 {
+  font-size: 42px;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.projects-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  animation: slideUp 1s ease-in-out;
+}
+
+.project-card img {
+  width: 40%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.project-info {
+  padding: 30px;
+  flex: 1;
+}
+
+.project-info h2 {
+  color: #e63946;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.project-info p {
+  color: #333;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.project-video-card {
+  background: #fdf6f0;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.project-video-card h2 {
+  font-size: 28px;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.project-video-card video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .project-info {
+    padding: 20px;
+  }
+}
